@@ -1,0 +1,162 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Experiencia 
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            .container.px-5.my-5
+                .text-center.mb-5
+                    h1.display-5.fw-bolder.mb-0
+                        span.text-gradient.d-inline Curriculum
+                .row.gx-5.justify-content-center
+
+                    .col-lg-11.col-xl-9.col-xxl-8
+
+                        // Experience Section
+                        section
+                            .d-flex.align-items-center.justify-content-between.mb-4
+                                h2.text-primary.fw-bolder.mb-0 Experiencia
+                                // Download resume button
+                                // Note: Set the link href target to a PDF file within your project
+                                a.btn.btn-primary.px-4.py-3(href='https://drive.google.com/file/d/1gIO0GrNDBmDiR5l8nf-EXegImTlW5rBF/view')
+                                    .d-inline-block.bi.bi-download.me-2
+                                    | Descargar CV
+
+                            // Experience Card 1
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 10/2022 - Presente
+                                                .small.fw-bolder Desarrollador Backend
+                                                .small.text-muted Megatrans S.A.
+                                                .small.text-muted C.A.B.A., Buenos Aires
+                                        .col-lg-8
+                                            div Análisis de soluciones y proyectos pre existentes.
+                                            div Desarrollo de nuevas funcionalidades y/o mejoras. 
+                                            div Documentación técnica para memorias futuras.
+                                            div Metodologías ágiles.
+                            // Experience Card 2
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 02/2022 - 10/2022
+                                                .small.fw-bolder Analista de Hardware
+                                                .small.text-muted Megatrans S.A.
+                                                .small.text-muted C.A.B.A., Buenos Aires
+                                        .col-lg-8
+                                            div Implementación de protocolos de comunicación. 
+                                            div Señales celulares y satelitales.
+                                            div Análisis e implementación de sensores (temperatura, caudal, RFID).
+                        // Education Section
+                        section
+                            h2.text-secondary.fw-bolder.mb-4 Educación
+                            
+                            // Education Card 1
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                     .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-secondary.fw-bolder.mb-2 02/2016 - Presente
+                                                .mb-2
+                                                    .small.fw-bolder UNTREF
+                                                    .small.text-muted Caseros, Buenos Aires
+                                                .fst-italic
+                                                    .small.text-muted Ingeniería de Sonido
+                                        .col-lg-8
+                                            div Carrera de grado orientada a las mediciones acústicas, procesamiento digital deseñales y electroacústica.
+                            // Education Card 2
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-secondary.fw-bolder.mb-2 02/2016 - 07/2023
+                                                .mb-2
+                                                    .small.fw-bolder UNTREF
+                                                    .small.text-muted Caseros, Buenos Aires
+                                                .fst-italic
+                                                    .small.text-muted Técnico en Grabación y Sonido
+                                        .col-lg-8
+                                            div Diseñar, instalar y mantener sistemas electroacústicos de sonorización.
+                                            div Calibrar sistemas de reamplificación para sonido en vivo.
+                                            div Realizar el sonido en vivo de conciertos.
+                        // Divider
+                        .pb-5
+
+                        // Skills Section
+                        section
+                            // Skillset Card
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    // Professional skills list
+                                    .mb-5
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-tools
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline Skills
+                                        .row.row-cols-1.row-cols-md-3.mb-4
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Analítico
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Desarrollo Web
+                                            .col
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Desarrollo de Hardware
+                                        .row.row-cols-1.row-cols-md-3
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Compañero
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 DSP
+                                            .col
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Acústica 
+
+                                    // Languages list
+                                    .mb-0
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-code-slash
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline Languages
+                                        .row.row-cols-1.row-cols-md-3.mb-4
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 HTML
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 CSS
+                                            .col
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 JavaScript
+                                        .row.row-cols-1.row-cols-md-3
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Python
+                                            .col.mb-4.mb-md-0
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 C#
+                                            .col
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 MatLab
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

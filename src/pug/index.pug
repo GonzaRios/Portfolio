@@ -1,0 +1,82 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Portfolio - Gonzalo Rios 
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header.py-5
+                .container.px-5.pb-5
+                    .row.gx-5.align-items-center
+                        .col-xxl-5
+                            // Header text content
+                            .text-center.text-xxl-start
+                                .badge.bg-gradient-primary-to-secondary.text-white.mb-4
+                                    .text-uppercase Acústica &middot; Desarrollo de Software &middot; DSP
+                                .fs-3.fw-light.text-muted Puedo ayudar a su negocio 
+                                h1.display-3.fw-bolder.mb-5
+                                    span.text-gradient.d-inline Generando valor con soluciones prácticas y sostenibles en el tiempo 
+                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
+                                    a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='resume.html') Experiencia
+                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Proyectos
+                        .col-xxl-7
+                            // Header profile picture
+                            .d-flex.justify-content-center.mt-5.mt-xxl-0
+                                .profile.bg-gradient-primary-to-secondary
+                                    // TIP: For best results, use a photo with a transparent background like the demo example below
+                                    // Watch a tutorial on how to do this on YouTube (link)
+                                    img.profile-img(src='assets/profile.png', alt='...')
+                                    .dots-1
+                                        include includes/svg-dots.pug
+                                    .dots-2
+                                        include includes/svg-dots.pug
+                                    .dots-3
+                                        include includes/svg-dots.pug
+                                    .dots-4
+                                        include includes/svg-dots.pug
+            
+            // About Section
+            section.bg-light.py-5
+                .container.px-5
+                    .row.gx-5.justify-content-center
+                        .col-xxl-8
+                            .text-center.my-5
+                                h2.display-5.fw-bolder
+                                    span.text-gradient.d-inline Acerca de mi
+                                p.lead.fw-light.mb-4 Mi nombre es Gonzalo Rios y mi interés es emplear la tecnología como medio para generar beneficios en la comunidad con diversas soluciones de audio.
+
+                                //iframe(width="560" height="315" src="https://youtu.be/zNNo7ciESns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                                iframe(width="640" height="480" src="https://www.youtube.com/embed/zNNo7ciESns" title="Portfolio   Gonzalo Rios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
+                                //- video(controls)
+                                //- source(src="/assets/Portfolio.mp4" type="video/mp4")
+                                //- p Tu navegador no soporta el video.
+                                .d-flex.justify-content-center.fs-2.gap-4
+                                    a.text-gradient(href="https://www.linkedin.com/in/rios-gonzalo/") 
+                                        i.bi.bi-linkedin
+                                    a.text-gradient(href="https://github.com/GonzaRios") 
+                                        i.bi.bi-github
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
+
+// https://youtu.be/zNNo7ciESns
